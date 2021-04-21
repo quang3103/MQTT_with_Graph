@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.msi_modern.mqtt.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginTop="12dp"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="@+id/textBox"
+        app:layout_constraintTop_toBottomOf="@+id/textBox" />
+
+    <EditText
+    android:id="@+id/textBox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="84dp"
+    android:layout_marginTop="80dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text=""
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="92dp"
+        android:text="Sender"
+        app:layout_constraintBottom_toTopOf="@+id/textBox"
+        app:layout_constraintStart_toStartOf="@+id/textBox" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</android.support.constraint.ConstraintLayout>
